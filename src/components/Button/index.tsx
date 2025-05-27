@@ -4,7 +4,9 @@ import { Button_Type } from "./button.type";
 function Button({ ...props }: Button_Type) {
   return (
     <Wrapper>
-      <Btn {...props}>{props.children}</Btn>
+      <Btn className="text-base lg:text-lg" {...props}>
+        {props.children}
+      </Btn>
     </Wrapper>
   );
 }
