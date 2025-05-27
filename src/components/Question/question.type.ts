@@ -1,4 +1,4 @@
-export type Question = {
+export type Question_Type = {
   number?: number | undefined;
   children?: string | undefined;
   selectedValue?: string | undefined;

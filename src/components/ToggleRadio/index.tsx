@@ -1,11 +1,11 @@
-import { ToggleRadio } from "./toggleRadio.type";
+import { ToggleRadio_Type } from "./toggleRadio.type";
 
 function ToggleRadio({
   selectedValue = "Label 1",
   setFieldValue = () => {},
   firstValue = "Label 1",
   secondValue = "Label 2",
-}: ToggleRadio) {
+}: ToggleRadio_Type) {
   const handleOnClick = (value: string) => {
     setFieldValue(value);
   };

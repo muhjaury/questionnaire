@@ -1,6 +1,6 @@
 "use client";
 
-import { Question } from "@/components";
+import { Button, Question } from "@/components";
 import { useState } from "react";
 
 function Kuesioner() {
@@ -16,7 +16,7 @@ function Kuesioner() {
   const [answer10, setAnswer10] = useState("Tidak");
 
   return (
-    <div className="p-8 justify-center ">
+    <div className="p-8 lg:px-32 justify-center">
       <div className="bg-gray-300 rounded-xl p-8">
         <p className="text-center font-bold text-2xl lg:text-5xl mb-8">
           Kuesioner
@@ -112,6 +112,7 @@ function Kuesioner() {
           >
             Pertanyaan 10
           </Question>
+          <Button>Lanjut</Button>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { ToggleRadio } from "..";
-import { Question } from "./question.type";
+import { Question_Type } from "./question.type";
 
 function Question({
   number = 1,
@@ -8,7 +8,7 @@ function Question({
   setFieldValue = () => {},
   firstValue = "Label 1",
   secondValue = "Label 2",
-}: Question) {
+}: Question_Type) {
   return (
     <div className="flex justify-start gap-4">
       <div className="lg:text-xl">{number}.</div>
