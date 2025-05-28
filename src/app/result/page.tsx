@@ -1,5 +1,5 @@
-import { Kuesioner } from "@/routes";
+import { Result } from "@/routes";
 
 export default function ResultPage() {
-  return <Kuesioner />;
+  return <Result />;
 }
