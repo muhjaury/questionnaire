@@ -1,5 +1,5 @@
 import { Kuesioner } from "@/routes";
 
-export default function HomePage() {
+export default function ResultPage() {
   return <Kuesioner />;
 }

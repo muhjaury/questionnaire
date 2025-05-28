@@ -1,6 +1,8 @@
 "use client";
 
 import { Button, Question } from "@/components";
+import { urls } from "@/constant/path";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 function Kuesioner() {
@@ -15,9 +17,15 @@ function Kuesioner() {
   const [answer9, setAnswer9] = useState("Tidak");
   const [answer10, setAnswer10] = useState("Tidak");
 
+  const router = useRouter();
+
+  const handleLanjutClick = () => {
+    router.push(urls.RESULT);
+  };
+
   return (
     <div className="p-8 lg:px-32 justify-center">
-      <div className="bg-gray-300 rounded-xl p-8">
+      <div className="bg-gray-300 rounded-3xl p-8">
         <p className="text-center font-bold text-2xl lg:text-5xl mb-8">
           Kuesioner
         </p>
@@ -112,7 +120,9 @@ function Kuesioner() {
           >
             Pertanyaan 10
           </Question>
-          <Button>Lanjut</Button>
+          <div className="flex justify-end">
+            <Button onClick={handleLanjutClick}>Lanjut</Button>
+          </div>
         </div>
       </div>
     </div>

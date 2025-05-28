@@ -3,7 +3,7 @@ import { Button_Type } from "./button.type";
 
 function Button({ ...props }: Button_Type) {
   return (
-    <Wrapper>
+    <Wrapper width={props.width} height={props.height}>
       <Btn className="text-base lg:text-lg" {...props}>
         {props.children}
       </Btn>

@@ -35,8 +35,8 @@ export interface Interface_PageTitle {
 export interface Interface_Components {
   display?: string;
   displaynavigation?: boolean;
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
   loading?: string;
   scrolled?: string;
   type?: string;
