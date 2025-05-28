@@ -37,7 +37,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer1}
         >
-          Pertanyaan 1
+          Apakah Anda sedang membaca ini di layar?
         </Question>
         <Question
           number={2}
@@ -46,7 +46,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer2}
         >
-          Pertanyaan 2
+          Apakah hari ini adalah hari Minggu?
         </Question>
         <Question
           number={3}
@@ -55,7 +55,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer3}
         >
-          Pertanyaan 3
+          Apakah kucing memiliki sayap?
         </Question>
         <Question
           number={4}
@@ -64,7 +64,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer4}
         >
-          Pertanyaan 4
+          Apakah Anda bisa bernapas di bawah air tanpa alat bantu?
         </Question>
         <Question
           number={5}
@@ -73,7 +73,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer5}
         >
-          Pertanyaan 5
+          Apakah 2 + 2 = 4?
         </Question>
         <Question
           number={6}
@@ -82,7 +82,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer6}
         >
-          Pertanyaan 6
+          Apakah Indonesia adalah negara kepulauan?
         </Question>
         <Question
           number={7}
@@ -91,7 +91,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer7}
         >
-          Pertanyaan 7
+          Apakah matahari terbit dari barat?
         </Question>
         <Question
           number={8}
@@ -100,7 +100,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer8}
         >
-          Pertanyaan 8
+          Apakah Anda merasa lapar saat ini?
         </Question>
         <Question
           number={9}
@@ -109,7 +109,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer9}
         >
-          Pertanyaan 9
+          Apakah manusia membutuhkan air untuk hidup?
         </Question>
         <Question
           number={10}
@@ -118,7 +118,7 @@ function Kuesioner() {
           secondValue="Tidak"
           selectedValue={answer10}
         >
-          Pertanyaan 10
+          Apakah Anda pernah terbang ke bulan?
         </Question>
         <div className="flex justify-end">
           <Button onClick={handleLanjutClick}>Lanjut</Button>

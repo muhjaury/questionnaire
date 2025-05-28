@@ -10,7 +10,7 @@ function Question({
   secondValue = "Label 2",
 }: Question_Type) {
   return (
-    <div className="flex justify-start gap-4">
+    <div className="flex justify-start gap-4 mb-4">
       <div className="lg:text-xl">{number}.</div>
       <div className="flex flex-col gap-2 lg:gap-4">
         <div className="lg:text-xl">{children}</div>
