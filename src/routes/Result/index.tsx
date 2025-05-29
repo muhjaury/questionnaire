@@ -11,10 +11,10 @@ function Result() {
       <Card>
         <div className="flex flex-col gap-4 items-center">
           <Img alt="result" src={SMILE} />
-          <p className="text-center font-bold text-2xl lg:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-5xl mb-8">
             Hasil
           </p>
-          <p className="text-center text-xl lg:text-4xl mb-8">
+          <p className="text-center text-xl md:text-4xl mb-8">
             Selamat! Senang sekali mengetahui kamu baik-baik saja dan sehat
             secara mental.
           </p>

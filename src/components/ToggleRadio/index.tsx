@@ -11,9 +11,9 @@ function ToggleRadio({
   };
 
   return (
-    <div className="flex gap-4 lg:gap-6">
+    <div className="flex gap-4 md:gap-6">
       <div
-        className="flex gap-2 lg:gap-4 cursor-pointer"
+        className="flex gap-2 md:gap-4 cursor-pointer"
         onClick={() => handleOnClick(firstValue)}
       >
         <div
@@ -32,10 +32,10 @@ function ToggleRadio({
             <div className="w-4 h-4 rounded-full bg-gray-600"></div>
           )}
         </div>
-        <div className="lg:text-xl">{firstValue}</div>
+        <div className="md:text-xl">{firstValue}</div>
       </div>
       <div
-        className="flex gap-2 lg:gap-4 cursor-pointer"
+        className="flex gap-2 md:gap-4 cursor-pointer"
         onClick={() => handleOnClick(secondValue)}
       >
         <div
@@ -54,7 +54,7 @@ function ToggleRadio({
             <div className="w-4 h-4 rounded-full bg-gray-600"></div>
           )}
         </div>
-        <div className="lg:text-xl">{secondValue}</div>
+        <div className="md:text-xl">{secondValue}</div>
       </div>
     </div>
   );

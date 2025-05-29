@@ -27,7 +27,7 @@ function Kuesioner() {
   return (
     <CoreLayout>
       <Card>
-        <p className="text-center font-bold text-2xl lg:text-5xl mb-8">
+        <p className="text-center font-bold text-2xl md:text-5xl mb-8">
           Kuesioner
         </p>
         <div className="flex flex-col gap-4">
