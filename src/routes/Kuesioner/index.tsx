@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Question } from "@/components";
+import { Button, Card, Question } from "@/components";
 import { urls } from "@/constant/path";
 import CoreLayout from "@/layout/CoreLayout";
 import { useRouter } from "next/navigation";
@@ -26,103 +26,105 @@ function Kuesioner() {
 
   return (
     <CoreLayout>
-      <p className="text-center font-bold text-2xl lg:text-5xl mb-8">
-        Kuesioner
-      </p>
-      <div className="flex flex-col gap-4">
-        <Question
-          number={1}
-          setFieldValue={setAnswer1}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer1}
-        >
-          Apakah Anda sedang membaca ini di layar?
-        </Question>
-        <Question
-          number={2}
-          setFieldValue={setAnswer2}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer2}
-        >
-          Apakah hari ini adalah hari Minggu?
-        </Question>
-        <Question
-          number={3}
-          setFieldValue={setAnswer3}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer3}
-        >
-          Apakah kucing memiliki sayap?
-        </Question>
-        <Question
-          number={4}
-          setFieldValue={setAnswer4}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer4}
-        >
-          Apakah Anda bisa bernapas di bawah air tanpa alat bantu?
-        </Question>
-        <Question
-          number={5}
-          setFieldValue={setAnswer5}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer5}
-        >
-          Apakah 2 + 2 = 4?
-        </Question>
-        <Question
-          number={6}
-          setFieldValue={setAnswer6}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer6}
-        >
-          Apakah Indonesia adalah negara kepulauan?
-        </Question>
-        <Question
-          number={7}
-          setFieldValue={setAnswer7}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer7}
-        >
-          Apakah matahari terbit dari barat?
-        </Question>
-        <Question
-          number={8}
-          setFieldValue={setAnswer8}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer8}
-        >
-          Apakah Anda merasa lapar saat ini?
-        </Question>
-        <Question
-          number={9}
-          setFieldValue={setAnswer9}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer9}
-        >
-          Apakah manusia membutuhkan air untuk hidup?
-        </Question>
-        <Question
-          number={10}
-          setFieldValue={setAnswer10}
-          firstValue="Iya"
-          secondValue="Tidak"
-          selectedValue={answer10}
-        >
-          Apakah Anda pernah terbang ke bulan?
-        </Question>
-        <div className="flex justify-end">
-          <Button onClick={handleLanjutClick}>Lanjut</Button>
+      <Card>
+        <p className="text-center font-bold text-2xl lg:text-5xl mb-8">
+          Kuesioner
+        </p>
+        <div className="flex flex-col gap-4">
+          <Question
+            number={1}
+            setFieldValue={setAnswer1}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer1}
+          >
+            Apakah Anda sedang membaca ini di layar?
+          </Question>
+          <Question
+            number={2}
+            setFieldValue={setAnswer2}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer2}
+          >
+            Apakah hari ini adalah hari Minggu?
+          </Question>
+          <Question
+            number={3}
+            setFieldValue={setAnswer3}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer3}
+          >
+            Apakah kucing memiliki sayap?
+          </Question>
+          <Question
+            number={4}
+            setFieldValue={setAnswer4}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer4}
+          >
+            Apakah Anda bisa bernapas di bawah air tanpa alat bantu?
+          </Question>
+          <Question
+            number={5}
+            setFieldValue={setAnswer5}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer5}
+          >
+            Apakah 2 + 2 = 4?
+          </Question>
+          <Question
+            number={6}
+            setFieldValue={setAnswer6}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer6}
+          >
+            Apakah Indonesia adalah negara kepulauan?
+          </Question>
+          <Question
+            number={7}
+            setFieldValue={setAnswer7}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer7}
+          >
+            Apakah matahari terbit dari barat?
+          </Question>
+          <Question
+            number={8}
+            setFieldValue={setAnswer8}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer8}
+          >
+            Apakah Anda merasa lapar saat ini?
+          </Question>
+          <Question
+            number={9}
+            setFieldValue={setAnswer9}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer9}
+          >
+            Apakah manusia membutuhkan air untuk hidup?
+          </Question>
+          <Question
+            number={10}
+            setFieldValue={setAnswer10}
+            firstValue="Iya"
+            secondValue="Tidak"
+            selectedValue={answer10}
+          >
+            Apakah Anda pernah terbang ke bulan?
+          </Question>
         </div>
+      </Card>
+      <div className="flex justify-end">
+        <Button onClick={handleLanjutClick}>Lanjut</Button>
       </div>
     </CoreLayout>
   );
