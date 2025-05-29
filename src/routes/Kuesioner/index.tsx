@@ -123,7 +123,7 @@ function Kuesioner() {
           </Question>
         </div>
       </Card>
-      <div className="flex justify-end" data-aos="fade-up">
+      <div className="flex justify-end w-full max-w-300" data-aos="fade-right">
         <Button onClick={handleLanjutClick}>Lanjut</Button>
       </div>
     </CoreLayout>

@@ -7,11 +7,12 @@ function CoreLayout({ ...props }: any) {
     AOS.init({
       duration: 500,
       once: true,
+      offset: 0,
     });
   }, []);
 
   return (
-    <div className="py-8 px-4 md:py-8 md:px-32 flex flex-col justify-center min-h-screen">
+    <div className="py-8 px-4 md:py-8 md:px-32 flex flex-col justify-center items-center min-h-screen">
       {props.children}
     </div>
   );
