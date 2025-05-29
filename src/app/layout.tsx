@@ -2,7 +2,7 @@ import WidgetProvider from "@/context";
 import Providers from "@/redux/Provider";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import "./globals.css";
+import "./../assets/css/globals.css";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
