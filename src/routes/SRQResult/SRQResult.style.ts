@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Result_Styled_Type } from "./result.type";
+import { Result_Styled_Type } from "./SRQResult.type";
 
 export const Img = styled.img<Result_Styled_Type>`
   width: 160px;

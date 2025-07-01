@@ -1,3 +1,3 @@
 export const urls = {
-  RESULT: "/result",
+  SRQ_RESULT: "/srq-result",
 };

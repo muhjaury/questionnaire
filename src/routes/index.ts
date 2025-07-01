@@ -1,5 +1,5 @@
-import Kuesioner from "./Kuesioner";
 import Main from "./Main";
-import Result from "./Result";
+import SRQ from "./SRQ";
+import SRQResult from "./SRQResult";
 
-export { Kuesioner, Main, Result };
+export { Main, SRQ, SRQResult };

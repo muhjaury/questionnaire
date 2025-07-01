@@ -1,5 +1,5 @@
-import { Kuesioner } from "@/routes";
+import { SRQ } from "@/routes";
 
 export default function HomePage() {
-  return <Kuesioner />;
+  return <SRQ />;
 }
