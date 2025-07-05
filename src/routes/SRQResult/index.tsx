@@ -1,24 +1,37 @@
 "use client";
 
 import { Button, Card } from "@/components";
+import { PENYAKIT } from "@/constant/variable";
 import CoreLayout from "@/layout/CoreLayout";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import SAD from "./../../assets/img/sad.png";
 import SMILE from "./../../assets/img/smile.png";
 import { Img } from "./SRQResult.style";
+import { urls } from "@/constant/path";
 
 function SRQResult() {
-  const [srq, setSrq] = useState<number[]>([]);
+  const [srq, setSrq] = useState<string[]>([]);
 
   const dataFromRedux = useSelector((state: any) => state.data);
+
+  const router = useRouter();
 
   useEffect(() => {
     setSrq(dataFromRedux.srq);
   }, []);
 
   const handleLanjutClick = () => {
-    console.log("Lanjut");
+    if (srq.includes(PENYAKIT.DEPRESI)) {
+      router.replace(urls.MINI_1);
+    } else if (srq.includes(PENYAKIT.NARKOBA)) {
+      router.replace(urls.MINI_2);
+    } else if (srq.includes(PENYAKIT.PSIKOSIS)) {
+      router.replace(urls.MINI_3);
+    } else if (srq.includes(PENYAKIT.PTSD)) {
+      router.replace(urls.MINI_4);
+    }
   };
 
   return (
