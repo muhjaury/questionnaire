@@ -3,12 +3,16 @@
 import { Button, Card } from "@/components";
 import { urls } from "@/constant/path";
 import CoreLayout from "@/layout/CoreLayout";
+import { ADD_DATA } from "@/redux/slices/dataSlice";
 import { useRouter } from "next/navigation";
+import { useDispatch } from "react-redux";
 
 function Main() {
   const router = useRouter();
+  const dispatch = useDispatch();
 
   const handleLanjutClick = () => {
+    dispatch(ADD_DATA({ start: true }));
     router.push(urls.SRQ);
   };
 

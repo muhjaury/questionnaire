@@ -122,7 +122,7 @@ function SRQ() {
       }
 
       dispatch(ADD_DATA({ srq: result }));
-      router.push(urls.SRQ_RESULT);
+      router.replace(urls.SRQ_RESULT);
     } else {
       setIsNextClicked(true);
       window.scrollTo({ top: 0, behavior: "smooth" });
