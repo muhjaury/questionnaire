@@ -10,19 +10,18 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
   const [isA2NextClicked, setIsA2NextClicked] = useState(false);
   const [isA2Done, setIsA2Done] = useState(false);
   const [isA3NextClicked, setIsA3NextClicked] = useState(false);
-  const [isA3Done, setIsA3Done] = useState(false);
-  const [a11, setA11] = useState("");
-  const [a12, setA12] = useState("");
-  const [a13, setA13] = useState("");
-  const [a21, setA21] = useState("");
-  const [a22, setA22] = useState("");
-  const [a23, setA23] = useState("");
-  const [a24, setA24] = useState("");
-  const [a25, setA25] = useState("");
-  const [a26, setA26] = useState("");
-  const [a27, setA27] = useState("");
-  const [a31, setA31] = useState("");
-  const [a32, setA32] = useState("");
+  const [a11, setA11] = useState("Iya");
+  const [a12, setA12] = useState("Iya");
+  const [a13, setA13] = useState("Iya");
+  const [a21, setA21] = useState("Iya");
+  const [a22, setA22] = useState("Iya");
+  const [a23, setA23] = useState("Iya");
+  const [a24, setA24] = useState("Iya");
+  const [a25, setA25] = useState("Iya");
+  const [a26, setA26] = useState("Iya");
+  const [a27, setA27] = useState("Iya");
+  const [a31, setA31] = useState("Iya");
+  const [a32, setA32] = useState("Iya");
 
   const dispatch = useDispatch();
 
@@ -47,7 +46,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
         (i) => i === "Iya"
       ).length;
       if (countA2 >= 4) {
-        dispatch(ADD_DATA({ AResult: "EPISODE DEPRESI" }));
+        dispatch(ADD_DATA({ aResult: "Depresi" }));
         setIsA2Done(true);
       } else {
         setIsDone(true);
@@ -60,7 +59,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
     if (a31 && a32) {
       dispatch(ADD_DATA({ a3: { a31, a32 } }));
       if (a31 === "Iya" && a32 === "Iya") {
-        dispatch(ADD_DATA({ AResult: "GANGGUAN DEPRESI BERULANG" }));
+        dispatch(ADD_DATA({ aResult: "Gangguan Depresi Berulang" }));
       }
       setIsDone(true);
     }
@@ -263,7 +262,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
     return A1();
   } else if (isA1Done && !isA2Done) {
     return A2();
-  } else if (isA2Done && !isA3Done) {
+  } else if (isA2Done) {
     return A3();
   }
 }

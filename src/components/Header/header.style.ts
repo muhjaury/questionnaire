@@ -6,6 +6,6 @@ export const Wrapper = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  height: 240px;
+  height: 320px;
   background: ${color.a1};
 `;
