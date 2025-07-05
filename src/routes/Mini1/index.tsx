@@ -1,17 +1,17 @@
 "use client";
 
-import { Card } from "@/components";
 import CoreLayout from "@/layout/CoreLayout";
+import { useState } from "react";
+import EpisodeDepresif from "./episodeDepresif";
 
 function Mini1() {
+  const [isADone, setIsADone] = useState(false);
+  const [isBDone, setIsBDone] = useState(false);
+
   return (
     <CoreLayout>
-      <Card>
-        <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-          Psikotes
-        </p>
-        <div className="flex flex-col gap-4"></div>
-      </Card>
+      {!isADone && <EpisodeDepresif setIsDone={setIsADone} />}
+      {isADone && !isBDone && <span>B</span>}
     </CoreLayout>
   );
 }
