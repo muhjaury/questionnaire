@@ -10,87 +10,123 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 
 function SRQ() {
-  const [answer1, setAnswer1] = useState("Tidak");
-  const [answer2, setAnswer2] = useState("Tidak");
-  const [answer3, setAnswer3] = useState("Tidak");
-  const [answer4, setAnswer4] = useState("Tidak");
-  const [answer5, setAnswer5] = useState("Tidak");
-  const [answer6, setAnswer6] = useState("Tidak");
-  const [answer7, setAnswer7] = useState("Tidak");
-  const [answer8, setAnswer8] = useState("Tidak");
-  const [answer9, setAnswer9] = useState("Tidak");
-  const [answer10, setAnswer10] = useState("Tidak");
-  const [answer11, setAnswer11] = useState("Tidak");
-  const [answer12, setAnswer12] = useState("Tidak");
-  const [answer13, setAnswer13] = useState("Tidak");
-  const [answer14, setAnswer14] = useState("Tidak");
-  const [answer15, setAnswer15] = useState("Tidak");
-  const [answer16, setAnswer16] = useState("Tidak");
-  const [answer17, setAnswer17] = useState("Tidak");
-  const [answer18, setAnswer18] = useState("Tidak");
-  const [answer19, setAnswer19] = useState("Tidak");
-  const [answer20, setAnswer20] = useState("Tidak");
-  const [answer21, setAnswer21] = useState("Tidak");
-  const [answer22, setAnswer22] = useState("Tidak");
-  const [answer23, setAnswer23] = useState("Tidak");
-  const [answer24, setAnswer24] = useState("Tidak");
-  const [answer25, setAnswer25] = useState("Tidak");
-  const [answer26, setAnswer26] = useState("Tidak");
-  const [answer27, setAnswer27] = useState("Tidak");
-  const [answer28, setAnswer28] = useState("Tidak");
-  const [answer29, setAnswer29] = useState("Tidak");
+  const [isNextClicked, setIsNextClicked] = useState(false);
+  const [answer1, setAnswer1] = useState("");
+  const [answer2, setAnswer2] = useState("");
+  const [answer3, setAnswer3] = useState("");
+  const [answer4, setAnswer4] = useState("");
+  const [answer5, setAnswer5] = useState("");
+  const [answer6, setAnswer6] = useState("");
+  const [answer7, setAnswer7] = useState("");
+  const [answer8, setAnswer8] = useState("");
+  const [answer9, setAnswer9] = useState("");
+  const [answer10, setAnswer10] = useState("");
+  const [answer11, setAnswer11] = useState("");
+  const [answer12, setAnswer12] = useState("");
+  const [answer13, setAnswer13] = useState("");
+  const [answer14, setAnswer14] = useState("");
+  const [answer15, setAnswer15] = useState("");
+  const [answer16, setAnswer16] = useState("");
+  const [answer17, setAnswer17] = useState("");
+  const [answer18, setAnswer18] = useState("");
+  const [answer19, setAnswer19] = useState("");
+  const [answer20, setAnswer20] = useState("");
+  const [answer21, setAnswer21] = useState("");
+  const [answer22, setAnswer22] = useState("");
+  const [answer23, setAnswer23] = useState("");
+  const [answer24, setAnswer24] = useState("");
+  const [answer25, setAnswer25] = useState("");
+  const [answer26, setAnswer26] = useState("");
+  const [answer27, setAnswer27] = useState("");
+  const [answer28, setAnswer28] = useState("");
+  const [answer29, setAnswer29] = useState("");
 
   const router = useRouter();
   const dispatch = useDispatch();
 
   const handleLanjutClick = () => {
-    let result = [];
-    const arr1 = [
-      answer1,
-      answer2,
-      answer3,
-      answer4,
-      answer5,
-      answer6,
-      answer7,
-      answer8,
-      answer9,
-      answer10,
-      answer11,
-      answer12,
-      answer13,
-      answer14,
-      answer15,
-      answer16,
-      answer17,
-      answer18,
-      answer19,
-      answer20,
-    ];
-    const arr2 = [answer21];
-    const arr3 = [answer23, answer24, answer25];
-    const arr4 = [answer25, answer26, answer27, answer28, answer29];
+    if (
+      answer1 &&
+      answer2 &&
+      answer3 &&
+      answer4 &&
+      answer5 &&
+      answer6 &&
+      answer7 &&
+      answer8 &&
+      answer9 &&
+      answer10 &&
+      answer11 &&
+      answer12 &&
+      answer13 &&
+      answer14 &&
+      answer15 &&
+      answer16 &&
+      answer17 &&
+      answer18 &&
+      answer19 &&
+      answer20 &&
+      answer21 &&
+      answer23 &&
+      answer24 &&
+      answer25 &&
+      answer25 &&
+      answer26 &&
+      answer27 &&
+      answer28 &&
+      answer29
+    ) {
+      let result = [];
+      const arr1 = [
+        answer1,
+        answer2,
+        answer3,
+        answer4,
+        answer5,
+        answer6,
+        answer7,
+        answer8,
+        answer9,
+        answer10,
+        answer11,
+        answer12,
+        answer13,
+        answer14,
+        answer15,
+        answer16,
+        answer17,
+        answer18,
+        answer19,
+        answer20,
+      ];
+      const arr2 = [answer21];
+      const arr3 = [answer23, answer24, answer25];
+      const arr4 = [answer25, answer26, answer27, answer28, answer29];
 
-    const condition1 = arr1.filter((i) => i === "Iya").length;
-    const condition2 = arr2.filter((i) => i === "Iya").length;
-    const condition3 = arr3.filter((i) => i === "Iya").length;
-    const condition4 = arr4.filter((i) => i === "Iya").length;
+      const condition1 = arr1.filter((i) => i === "Iya").length;
+      const condition2 = arr2.filter((i) => i === "Iya").length;
+      const condition3 = arr3.filter((i) => i === "Iya").length;
+      const condition4 = arr4.filter((i) => i === "Iya").length;
 
-    if (condition1 >= 5) {
-      result.push(PENYAKIT.DEPRESI);
-    }
-    if (condition2 === 1) {
-      result.push(PENYAKIT.NARKOBA);
-    }
-    if (condition3 >= 1) {
-      result.push(PENYAKIT.PSIKOSIS);
-    }
-    if (condition4 >= 1) {
-      result.push(PENYAKIT.PTSD);
-    }
+      if (condition1 >= 5) {
+        result.push(PENYAKIT.DEPRESI);
+      }
+      if (condition2 === 1) {
+        result.push(PENYAKIT.NARKOBA);
+      }
+      if (condition3 >= 1) {
+        result.push(PENYAKIT.PSIKOSIS);
+      }
+      if (condition4 >= 1) {
+        result.push(PENYAKIT.PTSD);
+      }
 
-    dispatch(ADD_DATA({ srq: result }));
-    router.push(urls.SRQ_RESULT);
+      dispatch(ADD_DATA({ srq: result }));
+      router.push(urls.SRQ_RESULT);
+    } else {
+      setIsNextClicked(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   return (
@@ -106,6 +142,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer1}
+            error={isNextClicked && !answer1 && "*Wajib di isi"}
           >
             Apakah Anda sering merasa sakit kepala?
           </Question>
@@ -115,6 +152,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer2}
+            error={isNextClicked && !answer2 && "*Wajib di isi"}
           >
             Apakah Anda kehilangan nafsu makan?
           </Question>
@@ -124,6 +162,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer3}
+            error={isNextClicked && !answer3 && "*Wajib di isi"}
           >
             Apakah tidur Anda tidak nyenyak?
           </Question>
@@ -133,6 +172,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer4}
+            error={isNextClicked && !answer4 && "*Wajib di isi"}
           >
             Apakah Anda mudah merasa takut?
           </Question>
@@ -142,6 +182,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer5}
+            error={isNextClicked && !answer5 && "*Wajib di isi"}
           >
             Apakah Anda merasa cemas, tegang dan khawatir?
           </Question>
@@ -151,6 +192,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer6}
+            error={isNextClicked && !answer6 && "*Wajib di isi"}
           >
             Apakah tangan Anda gemetar?
           </Question>
@@ -160,6 +202,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer7}
+            error={isNextClicked && !answer7 && "*Wajib di isi"}
           >
             Apakah Anda mengalami gangguan pencernaan?
           </Question>
@@ -169,6 +212,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer8}
+            error={isNextClicked && !answer8 && "*Wajib di isi"}
           >
             Apakah Anda merasa sulit berpikir jernih?
           </Question>
@@ -178,6 +222,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer9}
+            error={isNextClicked && !answer9 && "*Wajib di isi"}
           >
             Apakah Anda merasa tidak bahagia?
           </Question>
@@ -187,6 +232,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer10}
+            error={isNextClicked && !answer10 && "*Wajib di isi"}
           >
             Apakah Anda lebih sering menangis?
           </Question>
@@ -196,6 +242,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer11}
+            error={isNextClicked && !answer11 && "*Wajib di isi"}
           >
             Apakah Anda merasa sulit untuk menikmati aktivitas sehari-hari?
           </Question>
@@ -205,6 +252,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer12}
+            error={isNextClicked && !answer12 && "*Wajib di isi"}
           >
             Apakah Anda mengalami kesulitan untuk mengambil keputusan?
           </Question>
@@ -214,6 +262,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer13}
+            error={isNextClicked && !answer13 && "*Wajib di isi"}
           >
             Apakah aktivitas/tugas sehari-hari Anda terbengkalai?
           </Question>
@@ -223,6 +272,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer14}
+            error={isNextClicked && !answer14 && "*Wajib di isi"}
           >
             Apakah Anda merasa tidak mampu berperan dalam kehidupan ini?
           </Question>
@@ -232,6 +282,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer15}
+            error={isNextClicked && !answer15 && "*Wajib di isi"}
           >
             Apakah Anda kehilangan minat terhadap banyak hal?
           </Question>
@@ -241,6 +292,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer16}
+            error={isNextClicked && !answer16 && "*Wajib di isi"}
           >
             Apakah Anda merasa tidak berharga?
           </Question>
@@ -250,6 +302,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer17}
+            error={isNextClicked && !answer17 && "*Wajib di isi"}
           >
             Apakah Anda mempunyai pikiran untuk mengakhiri hidup Anda?
           </Question>
@@ -259,6 +312,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer18}
+            error={isNextClicked && !answer18 && "*Wajib di isi"}
           >
             Apakah Anda merasa lelah sepanjang waktu?
           </Question>
@@ -268,6 +322,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer19}
+            error={isNextClicked && !answer19 && "*Wajib di isi"}
           >
             Apakah Anda merasa tidak enak di perut?
           </Question>
@@ -277,6 +332,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer20}
+            error={isNextClicked && !answer20 && "*Wajib di isi"}
           >
             Apakah Anda mudah lelah?
           </Question>
@@ -286,6 +342,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer21}
+            error={isNextClicked && !answer21 && "*Wajib di isi"}
           >
             Apakah Anda minum alkohol lebih banyak dari biasanya atau Apakah
             Anda menggunakan narkoba?
@@ -296,6 +353,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer22}
+            error={isNextClicked && !answer22 && "*Wajib di isi"}
           >
             Apakah Anda yakin bahwa seseorang mencoba mencelakai Anda dengan
             cara tertentu?
@@ -306,6 +364,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer23}
+            error={isNextClicked && !answer23 && "*Wajib di isi"}
           >
             Apakah ada yang mengganggu atau hal yang tidak biasa dalam pikiran
             Anda?
@@ -316,6 +375,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer24}
+            error={isNextClicked && !answer24 && "*Wajib di isi"}
           >
             Apakah Anda pernah mendengar suara tanpa tahu sumbernya atau yang
             orang lain tidak dapat dengar?
@@ -326,6 +386,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer25}
+            error={isNextClicked && !answer25 && "*Wajib di isi"}
           >
             Apakah Anda mengalami mimpi yang mengganggu tentang suatu
             bencana/musibah atau adakah saat-saat Anda seolah mengalami kembali
@@ -337,6 +398,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer26}
+            error={isNextClicked && !answer26 && "*Wajib di isi"}
           >
             Apakah Anda menghindari kegiatan, tempat, orang atau pikiran
             mengingatkan Anda akan bencana tersebut?
@@ -347,6 +409,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer27}
+            error={isNextClicked && !answer27 && "*Wajib di isi"}
           >
             Apakah minat Anda terhadap teman dan kegiatan yang biasa Anda
             lakukan berkurang?
@@ -357,6 +420,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer28}
+            error={isNextClicked && !answer28 && "*Wajib di isi"}
           >
             Apakah Anda merasa sangat terganggu jika berada dalam situasi yang
             mengingatkan Anda akan bencana atau jika Anda berpikir tentang
@@ -368,6 +432,7 @@ function SRQ() {
             firstValue="Iya"
             secondValue="Tidak"
             selectedValue={answer29}
+            error={isNextClicked && !answer29 && "*Wajib di isi"}
           >
             Apakah Anda kesulitan memahami atau mengekspresikan perasaan Anda?
           </Question>

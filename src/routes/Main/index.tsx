@@ -19,15 +19,14 @@ function Main() {
           Psikotes
         </p>
         <p className="text-justify text-xl md:text-2xl">
-          Pertanyaan berikut berhubungan dengan masalah yang mungkin mengganggu
-          Anda selama 30 hari terakhir. Apabila Anda menganggap pertanyaan itu
-          Anda alami dalam 30 hari terakhir, berilah tanda silang (X) pada kolom
-          Y (berarti Ya). Sebaliknya, Apabila Anda menganggap pertanyaan itu
-          tidak Anda alami dalam 30 hari terakhir, berilah tanda silang (X) pada
-          kolom T (Tidak). Jika Anda tidak yakin tentang jawabannya, berilah
-          jawaban yang paling sesuai di antara Y dan T. Kami tegaskan bahwa
-          jawaban Anda bersifat rahasia dan akan digunakan hanya untuk membantu
-          pemecahan masalah Anda.
+          &nbsp;&nbsp;&nbsp;Pertanyaan berikut berhubungan dengan masalah yang
+          mungkin mengganggu Anda selama <b>30 hari terakhir</b>. Apabila Anda
+          menganggap pertanyaan itu Anda alami, tekan jawaban <b>Iya</b>.
+          Sebaliknya, Apabila Anda menganggap pertanyaan itu tidak Anda alami,
+          tekan jawaban <b>Tidak</b>. Jika Anda tidak yakin tentang jawabannya,
+          berilah jawaban yang paling sesuai di antara Iya dan Tidak. Kami
+          tegaskan bahwa jawaban Anda bersifat rahasia dan akan digunakan hanya
+          untuk membantu pemecahan masalah Anda.
         </p>
       </Card>
 

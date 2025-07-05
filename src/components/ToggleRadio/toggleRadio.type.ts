@@ -3,4 +3,5 @@ export type ToggleRadio_Type = {
   setFieldValue?: (...props: any) => any | undefined;
   firstValue?: string | undefined;
   secondValue?: string | undefined;
+  error?: string | boolean;
 };

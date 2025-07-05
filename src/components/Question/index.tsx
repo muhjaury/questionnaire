@@ -8,6 +8,7 @@ function Question({
   setFieldValue = () => {},
   firstValue = "Label 1",
   secondValue = "Label 2",
+  error = "",
 }: Question_Type) {
   return (
     <div className="flex justify-start gap-4 mb-4">
@@ -19,6 +20,7 @@ function Question({
           setFieldValue={setFieldValue}
           firstValue={firstValue}
           secondValue={secondValue}
+          error={error}
         />
       </div>
     </div>
