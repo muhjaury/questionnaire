@@ -1,6 +1,6 @@
 import { Button, Card, Question } from "@/components";
 import { ADD_DATA } from "@/redux/slices/dataSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { EpisodeDepresif_Type } from "./episodeDepresif.type";
 
@@ -25,6 +25,10 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
 
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const handleLanjutA1Click = () => {
     setIsA1NextClicked(true);
     if (a11 && a12 && a13) {
@@ -35,6 +39,8 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -51,6 +57,8 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -62,6 +70,8 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
         dispatch(ADD_DATA({ aResult: "Gangguan Depresi Berulang" }));
       }
       setIsDone(true);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 

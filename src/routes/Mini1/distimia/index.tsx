@@ -1,6 +1,6 @@
 import { Button, Card, Question } from "@/components";
 import { ADD_DATA } from "@/redux/slices/dataSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Distimia_Type } from "./distimia.type";
 
@@ -26,6 +26,10 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
 
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const handleLanjutB1Click = () => {
     setIsB1NextClicked(true);
     if (b11) {
@@ -35,6 +39,8 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -47,6 +53,8 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -87,6 +95,8 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
         dispatch(ADD_DATA({ bResult: "Distimia" }));
       }
       setIsDone(true);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 

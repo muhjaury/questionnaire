@@ -124,9 +124,9 @@ function SRQ() {
       dispatch(ADD_DATA({ srq: result }));
       router.replace(urls.SRQ_RESULT);
     } else {
-      setIsNextClicked(true);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
+    setIsNextClicked(true);
   };
 
   return (

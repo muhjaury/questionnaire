@@ -1,6 +1,6 @@
 import { Button, Card, Question } from "@/components";
 import { ADD_DATA } from "@/redux/slices/dataSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Agorafobia_Type } from "./agorafobia.type";
 
@@ -39,6 +39,10 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
 
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const handleLanjutD1Click = () => {
     setIsD1NextClicked(true);
     if (d11 && d12 && d13 && d14 && d15) {
@@ -51,6 +55,8 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -63,6 +69,8 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -75,6 +83,8 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -87,6 +97,8 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       } else {
         setIsDone(true);
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -144,6 +156,8 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
         dispatch(ADD_DATA({ dResult: "Agorafobia" }));
       }
       setIsDone(true);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 

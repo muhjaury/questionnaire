@@ -13,6 +13,7 @@ function CoreLayout({ ...props }: any) {
   const router = useRouter();
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     AOS.init({
       duration: 500,
       once: true,
