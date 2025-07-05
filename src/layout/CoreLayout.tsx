@@ -1,6 +1,8 @@
+import Header from "@/components/Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Wrapper } from "./coreLayout.style";
 
 function CoreLayout({ ...props }: any) {
   useEffect(() => {
@@ -12,9 +14,10 @@ function CoreLayout({ ...props }: any) {
   }, []);
 
   return (
-    <div className="py-8 px-4 md:py-8 md:px-32 flex flex-col justify-center items-center min-h-screen">
+    <Wrapper>
+      <Header />
       {props.children}
-    </div>
+    </Wrapper>
   );
 }
 

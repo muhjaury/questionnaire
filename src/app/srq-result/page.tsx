@@ -1,5 +1,5 @@
 import { SRQResult } from "@/routes";
 
-export default function ResultPage() {
+export default function SRQResultPage() {
   return <SRQResult />;
 }

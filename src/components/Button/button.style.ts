@@ -14,7 +14,7 @@ export const Btn = styled.button<Interface_Components>`
   color: ${color.a6};
   font-weight: 600;
   background: ${color.a5};
-  border-radius: 24px;
+  border-radius: 4px;
   border: 1px solid ${color.a5};
   ${({ removeshadow }) =>
     removeshadow !== "Y" &&

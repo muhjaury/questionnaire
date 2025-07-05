@@ -1,5 +1,5 @@
-import { SRQ } from "@/routes";
+import { Main } from "@/routes";
 
-export default function HomePage() {
-  return <SRQ />;
+export default function MainPage() {
+  return <Main />;
 }

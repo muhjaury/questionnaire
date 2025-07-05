@@ -1,11 +1,13 @@
+import { Wrapper } from "./card.style";
+
 function Card({ ...props }: any) {
   return (
-    <div
-      className="bg-white rounded-3xl py-8 px-4 md:p-8 w-full max-w-300 mb-4"
+    <Wrapper
+      className="bg-white py-8 px-4 md:p-8 w-full max-w-300 mb-4"
       data-aos="fade-up"
     >
       {props.children}
-    </div>
+    </Wrapper>
   );
 }
 

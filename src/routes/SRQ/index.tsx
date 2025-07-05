@@ -2,6 +2,7 @@
 
 import { Button, Card, Question } from "@/components";
 import { urls } from "@/constant/path";
+import { PENYAKIT } from "@/constant/variable";
 import CoreLayout from "@/layout/CoreLayout";
 import { ADD_DATA } from "@/redux/slices/dataSlice";
 import { useRouter } from "next/navigation";
@@ -76,16 +77,16 @@ function SRQ() {
     const condition4 = arr4.filter((i) => i === "Iya").length;
 
     if (condition1 >= 5) {
-      result.push("Cemas atau Depresi");
+      result.push(PENYAKIT.DEPRESI);
     }
     if (condition2 === 1) {
-      result.push("Curiga penggunaan zat psikoaktif atau narkoba");
+      result.push(PENYAKIT.NARKOBA);
     }
     if (condition3 >= 1) {
-      result.push("Gangguan psikosis atau gila");
+      result.push(PENYAKIT.PSIKOSIS);
     }
     if (condition4 >= 1) {
-      result.push("Stress atau PTSD");
+      result.push(PENYAKIT.PTSD);
     }
 
     dispatch(ADD_DATA({ srq: result }));

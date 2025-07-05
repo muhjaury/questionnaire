@@ -1,6 +1,6 @@
 "use client";
 
-import { Card } from "@/components";
+import { Button, Card } from "@/components";
 import CoreLayout from "@/layout/CoreLayout";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -16,6 +16,10 @@ function SRQResult() {
   useEffect(() => {
     setSrq(dataFromRedux.srq);
   }, []);
+
+  const handleLanjutClick = () => {
+    console.log("Lanjut");
+  };
 
   return (
     <CoreLayout>
@@ -41,6 +45,14 @@ function SRQResult() {
           )}
         </div>
       </Card>
+      {srq.length > 0 && (
+        <div
+          className="flex justify-end w-full max-w-300"
+          data-aos="fade-right"
+        >
+          <Button onClick={handleLanjutClick}>Lanjut</Button>
+        </div>
+      )}
     </CoreLayout>
   );
 }
