@@ -26,5 +26,8 @@ export const Btn = styled.button<Interface_Components>`
     background: ${color.a4};
     color: ${color.a2};
     border: 1px solid ${color.a4};
+    ${({ removeshadow }) =>
+      removeshadow !== "Y" &&
+      `box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);`}
   }
 `;
