@@ -3,6 +3,7 @@
 import CoreLayout from "@/layout/CoreLayout";
 import { useState } from "react";
 import Alkohol from "./alkohol";
+import ZatPsikoaktif from "./zatPsikoaktif";
 
 function Mini2() {
   const [isLDone, setIsLDone] = useState(false);
@@ -11,7 +12,7 @@ function Mini2() {
   return (
     <CoreLayout>
       {!isLDone && <Alkohol setIsDone={setIsLDone} />}
-      {isLDone && !isMDone && <span>M</span>}
+      {isLDone && !isMDone && <ZatPsikoaktif setIsDone={setIsMDone} />}
     </CoreLayout>
   );
 }
