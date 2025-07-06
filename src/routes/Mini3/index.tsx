@@ -33,9 +33,10 @@ function Mini3() {
   }, []);
 
   const handleSubmit = () => {
-    if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
-      router.replace(urls.MINI_4);
-    }
+    router.replace(urls.MINI_RESULT);
+    // if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
+    //   router.replace(urls.MINI_4);
+    // }
   };
 
   const handleLanjutN1N7Click = () => {
