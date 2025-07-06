@@ -2,9 +2,10 @@
 
 import CoreLayout from "@/layout/CoreLayout";
 import { useState } from "react";
+import Agorafobia from "./agorafobia";
 import Distimia from "./distimia";
 import EpisodeDepresif from "./episodeDepresif";
-import Agorafobia from "./agorafobia";
+import GangguanPanik from "./gangguanPanik";
 
 function Mini1() {
   const [isADone, setIsADone] = useState(false);
@@ -20,7 +21,7 @@ function Mini1() {
       {!isADone && <EpisodeDepresif setIsDone={setIsADone} />}
       {isADone && !isBDone && <Distimia setIsDone={setIsBDone} />}
       {isBDone && !isDDone && <Agorafobia setIsDone={setIsDDone} />}
-      {isDDone && !isEDone && <span>E</span>}
+      {isDDone && !isEDone && <GangguanPanik setIsDone={setIsEDone} />}
       {isEDone && !isFDone && <span>F</span>}
       {isFDone && !isGDone && <span>G</span>}
       {isGDone && !isHDone && <span>H</span>}
