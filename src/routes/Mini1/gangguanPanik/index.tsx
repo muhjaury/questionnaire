@@ -137,7 +137,7 @@ function GangguanPanik({ setIsDone = () => {} }: GangguanPanik_Type) {
     if (e41) {
       dispatch(ADD_DATA({ e4: { e41 } }));
       if (e41 === "Iya") {
-        dispatch(ADD_DATA({ eResult: "Agrofobia dengan Gangguan Panik" }));
+        dispatch(ADD_DATA({ eResult: "Agorafobia dengan Gangguan Panik" }));
       }
       setIsDone(true);
     } else {

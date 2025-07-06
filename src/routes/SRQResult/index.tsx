@@ -20,7 +20,7 @@ function SRQResult() {
 
   useEffect(() => {
     setSrq(dataFromRedux.srq);
-  }, []);
+  }, [dataFromRedux?.srq]);
 
   const handleLanjutClick = () => {
     if (srq.includes(PENYAKIT.DEPRESI)) {

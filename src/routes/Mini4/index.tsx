@@ -1,6 +1,7 @@
 "use client";
 
 import { Button, Card, Question } from "@/components";
+import { urls } from "@/constant/path";
 import CoreLayout from "@/layout/CoreLayout";
 import { ADD_DATA } from "@/redux/slices/dataSlice";
 import { useRouter } from "next/navigation";
@@ -14,16 +15,17 @@ function Mini4() {
   const [isI3I4Done, setIsI3I4Done] = useState(false);
   const [isI5NextClicked, setIsI5NextClicked] = useState(false);
   const [i11, setI11] = useState("Iya");
-  const [i21, setI21] = useState("Tidak");
-  const [i31, setI31] = useState("Tidak");
-  const [i41, setI41] = useState("Tidak");
-  const [i51, setI51] = useState("Tidak");
-  const [i52, setI52] = useState("Tidak");
+  const [i21, setI21] = useState("Iya");
+  const [i31, setI31] = useState("Iya");
+  const [i41, setI41] = useState("Iya");
+  const [i51, setI51] = useState("Iya");
+  const [i52, setI52] = useState("Iya");
   const [i53, setI53] = useState("Tidak");
   const [i54, setI54] = useState("Tidak");
   const [i55, setI55] = useState("Tidak");
 
   const dispatch = useDispatch();
+
   const router = useRouter();
 
   useEffect(() => {
@@ -31,8 +33,7 @@ function Mini4() {
   }, []);
 
   const handleSubmit = () => {
-    console.log("Done");
-    // router.replace(urls.MINI_4);
+    router.replace(urls.MINI_RESULT);
   };
 
   const handleLanjutI1I2Click = () => {

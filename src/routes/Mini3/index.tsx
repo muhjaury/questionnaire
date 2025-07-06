@@ -1,11 +1,13 @@
 "use client";
 
 import { Button, Card, Question } from "@/components";
+import { urls } from "@/constant/path";
+import { PENYAKIT } from "@/constant/variable";
 import CoreLayout from "@/layout/CoreLayout";
 import { ADD_DATA } from "@/redux/slices/dataSlice";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function Mini3() {
   const [isN1N7NextClicked, setIsN1N7NextClicked] = useState(false);
@@ -21,7 +23,9 @@ function Mini3() {
   const [n81, setN81] = useState("Tidak");
   const [n91, setN91] = useState("Iya");
 
+  const dataFromRedux = useSelector((state: any) => state.data);
   const dispatch = useDispatch();
+
   const router = useRouter();
 
   useEffect(() => {
@@ -29,8 +33,9 @@ function Mini3() {
   }, []);
 
   const handleSubmit = () => {
-    console.log("Done");
-    // router.replace(urls.MINI_4);
+    if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
+      router.replace(urls.MINI_4);
+    }
   };
 
   const handleLanjutN1N7Click = () => {
