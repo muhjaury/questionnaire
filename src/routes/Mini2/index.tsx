@@ -1,17 +1,17 @@
 "use client";
 
-import { Card } from "@/components";
 import CoreLayout from "@/layout/CoreLayout";
+import { useState } from "react";
+import Alkohol from "./alkohol";
 
 function Mini2() {
+  const [isLDone, setIsLDone] = useState(false);
+  const [isMDone, setIsMDone] = useState(false);
+
   return (
     <CoreLayout>
-      <Card>
-        <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-          Psikotes
-        </p>
-        <div className="flex flex-col gap-4"></div>
-      </Card>
+      {!isLDone && <Alkohol setIsDone={setIsLDone} />}
+      {isLDone && !isMDone && <span>M</span>}
     </CoreLayout>
   );
 }
