@@ -81,7 +81,7 @@ function Mini3() {
       <CoreLayout>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Psikotik
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -183,7 +183,7 @@ function Mini3() {
       <CoreLayout>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Psikotik
           </p>
           <div className="flex flex-col gap-4">
             <Question

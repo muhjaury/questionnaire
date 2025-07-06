@@ -105,7 +105,7 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Distimia
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -136,7 +136,7 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Distimia
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -168,7 +168,7 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Distimia
           </p>
           <div className="flex flex-col gap-4">
             <Question

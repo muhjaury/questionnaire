@@ -80,7 +80,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Episode Depresif
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -133,7 +133,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Episode Depresif
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -231,7 +231,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Episode Depresif
           </p>
           <div className="flex flex-col gap-4">
             <Question

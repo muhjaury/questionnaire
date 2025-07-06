@@ -166,7 +166,7 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Agorafobia
           </p>
           <div className="flex flex-col gap-4">
             <p className="md:text-xl">
@@ -241,7 +241,7 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Agorafobia
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -272,7 +272,7 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Agorafobia
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -303,7 +303,7 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Agorafobia
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -334,7 +334,7 @@ function Agorafobia({ setIsDone = () => {} }: Agorafobia_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Agorafobia
           </p>
           <div className="flex flex-col gap-4">
             <p className="md:text-xl">

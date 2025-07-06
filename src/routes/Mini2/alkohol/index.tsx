@@ -78,7 +78,7 @@ function Alkohol({ setIsDone = () => {} }: Alkohol_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Yang Berkaitan Dengan Alkohol
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -111,7 +111,7 @@ function Alkohol({ setIsDone = () => {} }: Alkohol_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Yang Berkaitan Dengan Alkohol
           </p>
           <div className="flex flex-col gap-4">
             <p className="md:text-xl">Dalam 12 bulan terakhir :</p>
@@ -200,7 +200,7 @@ function Alkohol({ setIsDone = () => {} }: Alkohol_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Yang Berkaitan Dengan Alkohol
           </p>
           <div className="flex flex-col gap-4">
             <p className="md:text-xl">Dalam 12 bulan terakhir :</p>

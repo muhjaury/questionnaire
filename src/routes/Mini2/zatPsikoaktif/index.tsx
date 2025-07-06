@@ -78,7 +78,7 @@ function ZatPsikoaktif({ setIsDone = () => {} }: ZatPsikoaktif_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Yang Berkaitan Dengan Zat Psikoaktif
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -110,7 +110,7 @@ function ZatPsikoaktif({ setIsDone = () => {} }: ZatPsikoaktif_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Yang Berkaitan Dengan Zat Psikoaktif
           </p>
           <div className="flex flex-col gap-4">
             <p className="md:text-xl">Dalam 12 bulan terakhir :</p>
@@ -204,7 +204,7 @@ function ZatPsikoaktif({ setIsDone = () => {} }: ZatPsikoaktif_Type) {
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Yang Berkaitan Dengan Zat Psikoaktif
           </p>
           <div className="flex flex-col gap-4">
             <p className="md:text-xl">Dalam 12 bulan terakhir :</p>

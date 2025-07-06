@@ -103,7 +103,7 @@ function GangguanObsesifKompulsif({
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Obsesif-Kompulsif
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -149,7 +149,7 @@ function GangguanObsesifKompulsif({
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Obsesif-Kompulsif
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -180,7 +180,7 @@ function GangguanObsesifKompulsif({
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Obsesif-Kompulsif
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -211,7 +211,7 @@ function GangguanObsesifKompulsif({
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Obsesif-Kompulsif
           </p>
           <div className="flex flex-col gap-4">
             <Question
@@ -242,7 +242,7 @@ function GangguanObsesifKompulsif({
       <>
         <Card>
           <p className="text-center font-bold text-3xl md:text-5xl mb-8">
-            Psikotes
+            Gangguan Obsesif-Kompulsif
           </p>
           <div className="flex flex-col gap-4">
             <Question
