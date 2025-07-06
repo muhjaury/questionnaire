@@ -6,6 +6,7 @@ import Agorafobia from "./agorafobia";
 import Distimia from "./distimia";
 import EpisodeDepresif from "./episodeDepresif";
 import GangguanPanik from "./gangguanPanik";
+import Sosialfobia from "./sosialfobia";
 
 function Mini1() {
   const [isADone, setIsADone] = useState(false);
@@ -22,7 +23,7 @@ function Mini1() {
       {isADone && !isBDone && <Distimia setIsDone={setIsBDone} />}
       {isBDone && !isDDone && <Agorafobia setIsDone={setIsDDone} />}
       {isDDone && !isEDone && <GangguanPanik setIsDone={setIsEDone} />}
-      {isEDone && !isFDone && <span>F</span>}
+      {isEDone && !isFDone && <Sosialfobia setIsDone={setIsFDone} />}
       {isFDone && !isGDone && <span>G</span>}
       {isGDone && !isHDone && <span>H</span>}
     </CoreLayout>
