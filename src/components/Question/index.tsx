@@ -2,7 +2,7 @@ import { ToggleRadio } from "..";
 import { Question_Type } from "./question.type";
 
 function Question({
-  number = 1,
+  number,
   children = "Pertanyaan",
   selectedValue = "Label 1",
   setFieldValue = () => {},
@@ -12,7 +12,7 @@ function Question({
 }: Question_Type) {
   return (
     <div className="flex justify-start gap-4 mb-4">
-      <div className="md:text-xl">{number}.</div>
+      {number && <div className="md:text-xl">{number}.</div>}
       <div className="flex flex-col gap-2 md:gap-4">
         <div className="md:text-xl">{children}</div>
         <ToggleRadio
