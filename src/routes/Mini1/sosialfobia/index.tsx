@@ -20,20 +20,20 @@ function Sosialfobia({ setIsDone = () => {} }: Sosialfobia_Type) {
   const [f41, setF41] = useState("Iya");
   const [f42, setF42] = useState("Tidak");
   const [f43, setF43] = useState("Tidak");
-  const [f51, setF51] = useState("");
-  const [f52, setF52] = useState("");
-  const [f53, setF53] = useState("");
-  const [f54, setF54] = useState("");
-  const [f55, setF55] = useState("");
-  const [f56, setF56] = useState("");
-  const [f57, setF57] = useState("");
-  const [f58, setF58] = useState("");
-  const [f59, setF59] = useState("");
-  const [f510, setF510] = useState("");
-  const [f511, setF511] = useState("");
-  const [f512, setF512] = useState("");
-  const [f513, setF513] = useState("");
-  const [f514, setF514] = useState("");
+  const [f51, setF51] = useState("Iya");
+  const [f52, setF52] = useState("Tidak");
+  const [f53, setF53] = useState("Tidak");
+  const [f54, setF54] = useState("Tidak");
+  const [f55, setF55] = useState("Iya");
+  const [f56, setF56] = useState("Iya");
+  const [f57, setF57] = useState("Iya");
+  const [f58, setF58] = useState("Iya");
+  const [f59, setF59] = useState("Iya");
+  const [f510, setF510] = useState("Iya");
+  const [f511, setF511] = useState("Iya");
+  const [f512, setF512] = useState("Iya");
+  const [f513, setF513] = useState("Iya");
+  const [f514, setF514] = useState("Iya");
 
   const dispatch = useDispatch();
 

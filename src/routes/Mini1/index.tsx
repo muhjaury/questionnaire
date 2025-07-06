@@ -5,6 +5,7 @@ import { useState } from "react";
 import Agorafobia from "./agorafobia";
 import Distimia from "./distimia";
 import EpisodeDepresif from "./episodeDepresif";
+import GangguanObsesifKompulsif from "./gangguanObsesifKompulsif";
 import GangguanPanik from "./gangguanPanik";
 import Sosialfobia from "./sosialfobia";
 
@@ -24,7 +25,9 @@ function Mini1() {
       {isBDone && !isDDone && <Agorafobia setIsDone={setIsDDone} />}
       {isDDone && !isEDone && <GangguanPanik setIsDone={setIsEDone} />}
       {isEDone && !isFDone && <Sosialfobia setIsDone={setIsFDone} />}
-      {isFDone && !isGDone && <span>G</span>}
+      {isFDone && !isGDone && (
+        <GangguanObsesifKompulsif setIsDone={setIsGDone} />
+      )}
       {isGDone && !isHDone && <span>H</span>}
     </CoreLayout>
   );
