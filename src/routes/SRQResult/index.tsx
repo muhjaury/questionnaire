@@ -62,6 +62,7 @@ function SRQResult() {
               title="Cara Efektif Menjaga Kesehatan Mental"
               description="Berikut adalah beberapa tips yang bisa dilakukan dalam memperbaiki kesehatan jiwa Anda:"
               onClose={() => setDisplayAdds1(false)}
+              onOpen={() => window.open(urls.TIPS)}
             />
           )}
         </div>

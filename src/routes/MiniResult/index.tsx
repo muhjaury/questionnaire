@@ -1,6 +1,7 @@
 "use client";
 
 import { Adds, Card } from "@/components";
+import { urls } from "@/constant/path";
 import CoreLayout from "@/layout/CoreLayout";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -73,6 +74,7 @@ function MiniResult() {
               title="Cara Efektif Menjaga Kesehatan Mental"
               description="Berikut adalah beberapa tips yang bisa dilakukan dalam memperbaiki kesehatan jiwa Anda:"
               onClose={() => setDisplayAdds1(false)}
+              onOpen={() => window.open(urls.TIPS)}
             />
           )}
         </div>

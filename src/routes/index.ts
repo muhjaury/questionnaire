@@ -7,9 +7,11 @@ import MiniResult from "./MiniResult";
 import Panduan from "./Panduan";
 import SRQ from "./SRQ";
 import SRQResult from "./SRQResult";
+import Tips from "./Tips";
 
 export {
   Main,
+  Tips,
   Mini1,
   Mini2,
   Mini3,
