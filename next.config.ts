@@ -5,6 +5,9 @@ const ASSET_PREFIX = process.env.NEXT_PUBLIC_PREFIX;
 const nextConfig: NextConfig = {
   reactStrictMode: false,
   assetPrefix: ASSET_PREFIX,
+  compiler: {
+    styledComponents: true,
+  },
   webpack: (config: any) => {
     const fileLoaderRule = config.module.rules?.find(
       (rule: any) =>
