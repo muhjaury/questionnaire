@@ -1,6 +1,6 @@
 "use client";
 
-import { Card } from "@/components";
+import { Adds, Card } from "@/components";
 import CoreLayout from "@/layout/CoreLayout";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -10,6 +10,7 @@ import { Img } from "./MiniResult.style";
 
 function MiniResult() {
   const [miniList, setMiniList] = useState<string[]>([]);
+  const [displayAdds1, setDisplayAdds1] = useState(true);
 
   const dataFromRedux = useSelector((state: any) => state.data);
 
@@ -66,6 +67,13 @@ function MiniResult() {
                 </li>
               ))}
             </ul>
+          )}
+          {miniList?.length > 0 && displayAdds1 && (
+            <Adds
+              title="Cara Efektif Menjaga Kesehatan Mental"
+              description="Berikut adalah beberapa tips yang bisa dilakukan dalam memperbaiki kesehatan jiwa Anda:"
+              onClose={() => setDisplayAdds1(false)}
+            />
           )}
         </div>
       </Card>
