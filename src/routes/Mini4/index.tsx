@@ -14,15 +14,15 @@ function Mini4() {
   const [isI3I4NextClicked, setIsI3I4NextClicked] = useState(false);
   const [isI3I4Done, setIsI3I4Done] = useState(false);
   const [isI5NextClicked, setIsI5NextClicked] = useState(false);
-  const [i11, setI11] = useState("Iya");
-  const [i21, setI21] = useState("Iya");
-  const [i31, setI31] = useState("Iya");
-  const [i41, setI41] = useState("Iya");
-  const [i51, setI51] = useState("Iya");
-  const [i52, setI52] = useState("Iya");
-  const [i53, setI53] = useState("Tidak");
-  const [i54, setI54] = useState("Tidak");
-  const [i55, setI55] = useState("Tidak");
+  const [i11, setI11] = useState("");
+  const [i21, setI21] = useState("");
+  const [i31, setI31] = useState("");
+  const [i41, setI41] = useState("");
+  const [i51, setI51] = useState("");
+  const [i52, setI52] = useState("");
+  const [i53, setI53] = useState("");
+  const [i54, setI54] = useState("");
+  const [i55, setI55] = useState("");
 
   const dispatch = useDispatch();
 

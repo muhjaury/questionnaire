@@ -10,16 +10,16 @@ function ZatPsikoaktif({ setIsDone = () => {} }: ZatPsikoaktif_Type) {
   const [isM2NextClicked, setIsM2NextClicked] = useState(false);
   const [isM2Done, setIsM2Done] = useState(false);
   const [isM3NextClicked, setIsM3NextClicked] = useState(false);
-  const [m11, setM11] = useState("Iya");
-  const [m21, setM21] = useState("Iya");
-  const [m22, setM22] = useState("Iya");
-  const [m23, setM23] = useState("Tidak");
-  const [m24, setM24] = useState("Tidak");
-  const [m25, setM25] = useState("Tidak");
-  const [m26, setM26] = useState("Tidak");
-  const [m31, setM31] = useState("Iya");
-  const [m32, setM32] = useState("Tidak");
-  const [m33, setM33] = useState("Tidak");
+  const [m11, setM11] = useState("");
+  const [m21, setM21] = useState("");
+  const [m22, setM22] = useState("");
+  const [m23, setM23] = useState("");
+  const [m24, setM24] = useState("");
+  const [m25, setM25] = useState("");
+  const [m26, setM26] = useState("");
+  const [m31, setM31] = useState("");
+  const [m32, setM32] = useState("");
+  const [m33, setM33] = useState("");
 
   const dispatch = useDispatch();
 

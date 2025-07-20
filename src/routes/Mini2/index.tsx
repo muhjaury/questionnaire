@@ -18,16 +18,13 @@ function Mini2() {
   const router = useRouter();
 
   useEffect(() => {
-    if (isMDone) {
-      router.replace(urls.MINI_RESULT);
+    if (dataFromRedux?.srq?.length > 0 && isMDone) {
+      if (dataFromRedux.srq.includes(PENYAKIT.PSIKOSIS)) {
+        router.replace(urls.MINI_3);
+      } else if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
+        router.replace(urls.MINI_4);
+      }
     }
-    // if (dataFromRedux?.srq?.length > 0 && isMDone) {
-    //   if (dataFromRedux.srq.includes(PENYAKIT.PSIKOSIS)) {
-    //     router.replace(urls.MINI_3);
-    //   } else if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
-    //     router.replace(urls.MINI_4);
-    //   }
-    // }
   }, [dataFromRedux?.srq, isMDone]);
 
   return (

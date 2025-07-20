@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
-const initialState: any = { start: true };
+const initialState: any = { start: false };
 
 const dataSlice = createSlice({
   name: "DATA",

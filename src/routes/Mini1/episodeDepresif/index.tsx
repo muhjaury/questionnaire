@@ -10,18 +10,18 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
   const [isA2NextClicked, setIsA2NextClicked] = useState(false);
   const [isA2Done, setIsA2Done] = useState(false);
   const [isA3NextClicked, setIsA3NextClicked] = useState(false);
-  const [a11, setA11] = useState("Iya");
-  const [a12, setA12] = useState("Iya");
-  const [a13, setA13] = useState("Iya");
-  const [a21, setA21] = useState("Iya");
-  const [a22, setA22] = useState("Iya");
-  const [a23, setA23] = useState("Iya");
-  const [a24, setA24] = useState("Iya");
-  const [a25, setA25] = useState("Iya");
-  const [a26, setA26] = useState("Iya");
-  const [a27, setA27] = useState("Iya");
-  const [a31, setA31] = useState("Iya");
-  const [a32, setA32] = useState("Iya");
+  const [a11, setA11] = useState("");
+  const [a12, setA12] = useState("");
+  const [a13, setA13] = useState("");
+  const [a21, setA21] = useState("");
+  const [a22, setA22] = useState("");
+  const [a23, setA23] = useState("");
+  const [a24, setA24] = useState("");
+  const [a25, setA25] = useState("");
+  const [a26, setA26] = useState("");
+  const [a27, setA27] = useState("");
+  const [a31, setA31] = useState("");
+  const [a32, setA32] = useState("");
 
   const dispatch = useDispatch();
 

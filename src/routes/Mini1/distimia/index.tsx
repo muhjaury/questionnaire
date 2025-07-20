@@ -10,19 +10,19 @@ function Distimia({ setIsDone = () => {} }: Distimia_Type) {
   const [isB2NextClicked, setIsB2NextClicked] = useState(false);
   const [isB2Done, setIsB2Done] = useState(false);
   const [isB3NextClicked, setIsB3NextClicked] = useState(false);
-  const [b11, setB11] = useState("Iya");
-  const [b21, setB21] = useState("Tidak");
-  const [b31, setB31] = useState("Iya");
-  const [b32, setB32] = useState("Iya");
-  const [b33, setB33] = useState("Iya");
-  const [b34, setB34] = useState("Iya");
-  const [b35, setB35] = useState("Iya");
-  const [b36, setB36] = useState("Iya");
-  const [b37, setB37] = useState("Iya");
-  const [b38, setB38] = useState("Iya");
-  const [b39, setB39] = useState("Iya");
-  const [b310, setB310] = useState("Iya");
-  const [b311, setB311] = useState("Iya");
+  const [b11, setB11] = useState("");
+  const [b21, setB21] = useState("");
+  const [b31, setB31] = useState("");
+  const [b32, setB32] = useState("");
+  const [b33, setB33] = useState("");
+  const [b34, setB34] = useState("");
+  const [b35, setB35] = useState("");
+  const [b36, setB36] = useState("");
+  const [b37, setB37] = useState("");
+  const [b38, setB38] = useState("");
+  const [b39, setB39] = useState("");
+  const [b310, setB310] = useState("");
+  const [b311, setB311] = useState("");
 
   const dispatch = useDispatch();
 

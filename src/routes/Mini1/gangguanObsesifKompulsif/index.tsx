@@ -16,12 +16,12 @@ function GangguanObsesifKompulsif({
   const [isG5NextClicked, setIsG5NextClicked] = useState(false);
   const [isG5Done, setIsG5Done] = useState(false);
   const [isG6NextClicked, setIsG6NextClicked] = useState(false);
-  const [g11, setG11] = useState("Iya");
-  const [g21, setG21] = useState("Tidak");
-  const [g31, setG31] = useState("Iya");
-  const [g41, setG41] = useState("Iya");
-  const [g51, setG51] = useState("Iya");
-  const [g61, setG61] = useState("Iya");
+  const [g11, setG11] = useState("");
+  const [g21, setG21] = useState("");
+  const [g31, setG31] = useState("");
+  const [g41, setG41] = useState("");
+  const [g51, setG51] = useState("");
+  const [g61, setG61] = useState("");
 
   const dispatch = useDispatch();
 

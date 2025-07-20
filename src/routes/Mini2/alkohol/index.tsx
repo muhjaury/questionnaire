@@ -10,16 +10,16 @@ function Alkohol({ setIsDone = () => {} }: Alkohol_Type) {
   const [isL2NextClicked, setIsL2NextClicked] = useState(false);
   const [isL2Done, setIsL2Done] = useState(false);
   const [isL3NextClicked, setIsL3NextClicked] = useState(false);
-  const [l11, setL11] = useState("Iya");
-  const [l21, setL21] = useState("Iya");
-  const [l22, setL22] = useState("Iya");
-  const [l23, setL23] = useState("Tidak");
-  const [l24, setL24] = useState("Tidak");
-  const [l25, setL25] = useState("Tidak");
-  const [l26, setL26] = useState("Tidak");
-  const [l31, setL31] = useState("Iya");
-  const [l32, setL32] = useState("Tidak");
-  const [l33, setL33] = useState("Tidak");
+  const [l11, setL11] = useState("");
+  const [l21, setL21] = useState("");
+  const [l22, setL22] = useState("");
+  const [l23, setL23] = useState("");
+  const [l24, setL24] = useState("");
+  const [l25, setL25] = useState("");
+  const [l26, setL26] = useState("");
+  const [l31, setL31] = useState("");
+  const [l32, setL32] = useState("");
+  const [l33, setL33] = useState("");
 
   const dispatch = useDispatch();
 
