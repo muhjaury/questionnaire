@@ -4,4 +4,5 @@ export type ToggleRadio_Type = {
   firstValue?: string | undefined;
   secondValue?: string | undefined;
   error?: string | boolean;
+  rounded?: boolean;
 };

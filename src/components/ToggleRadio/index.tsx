@@ -7,6 +7,7 @@ function ToggleRadio({
   firstValue = "Label 1",
   secondValue = "Label 2",
   error = "",
+  rounded = false,
 }: ToggleRadio_Type) {
   const handleOnClick = (value: string) => {
     setFieldValue(value);
@@ -23,7 +24,7 @@ function ToggleRadio({
             className={`
             w-6 h-6  border-2 
             flex items-center justify-center
-            transition-all duration-200 ease-in-out
+            transition-all duration-200 ease-in-out ${rounded && "rounded-full"}
             ${
               selectedValue === firstValue
                 ? "border-gray-600 bg-white"
@@ -32,10 +33,12 @@ function ToggleRadio({
           `}
           >
             {selectedValue === firstValue && (
-              <div className="w-4 h-4  bg-gray-600"></div>
+              <div
+                className={`w-4 h-4  bg-gray-600  ${rounded && "rounded-full"}`}
+              ></div>
             )}
           </div>
-          <div className="md:text-xl">{firstValue}</div>
+          <div className="text-lg md:text-xl">{firstValue}</div>
         </div>
         <div
           className="flex gap-2 md:gap-4 cursor-pointer"
@@ -45,7 +48,9 @@ function ToggleRadio({
             className={`
             w-6 h-6  border-2 
             flex items-center justify-center
-            transition-all duration-200 ease-in-out
+            transition-all duration-200 ease-in-out  ${
+              rounded && "rounded-full"
+            }
             ${
               selectedValue === secondValue
                 ? "border-gray-600 bg-white"
@@ -54,10 +59,12 @@ function ToggleRadio({
           `}
           >
             {selectedValue === secondValue && (
-              <div className="w-4 h-4  bg-gray-600"></div>
+              <div
+                className={`w-4 h-4  bg-gray-600  ${rounded && "rounded-full"}`}
+              ></div>
             )}
           </div>
-          <div className="md:text-xl">{secondValue}</div>
+          <div className="text-lg md:text-xl">{secondValue}</div>
         </div>
       </div>
       {error && <Error>{error}</Error>}

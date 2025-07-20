@@ -22,7 +22,7 @@ function CoreLayout({ ...props }: any) {
   }, []);
 
   useEffect(() => {
-    if (!dataFromRedux.start) {
+    if (!props.noRedirect && !dataFromRedux.start) {
       router.push(urls.MAIN);
     }
   }, [dataFromRedux]);

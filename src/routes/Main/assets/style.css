@@ -1,0 +1,25 @@
+.ant-radio-label {
+  font-size: 18px !important;
+
+  @media all and (min-width: 768px) {
+    font-size: 20px !important;
+  }
+}
+
+.ant-picker-input {
+  input {
+    font-size: 18px !important;
+
+    @media all and (min-width: 768px) {
+      font-size: 20px !important;
+    }
+  }
+}
+
+input.ant-input {
+  font-size: 18px !important;
+
+  @media all and (min-width: 768px) {
+    font-size: 20px !important;
+  }
+}

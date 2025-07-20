@@ -50,10 +50,10 @@ function MiniResult() {
       <Card>
         <div className="flex flex-col gap-4 items-center">
           <Img alt="result" src={miniList?.length === 0 ? SMILE : SAD} />
-          <p className="text-center font-bold text-2xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-2">
             Hasil
           </p>
-          <p className="text-center text-xl md:text-4xl mb-8">
+          <p className="text-center text-lg md:text-xl mb-2">
             {miniList?.length === 0
               ? "Selamat! Senang sekali mengetahui kamu tidak mengidap kondisi spesifik"
               : "Anda kemungkinan spesifik mengidap kondisi dibawah ini:"}
@@ -61,7 +61,7 @@ function MiniResult() {
           {miniList?.length > 0 && (
             <ul className="list-disc pl-4">
               {miniList.map((item, index) => (
-                <li key={index} className="text-lg md:text-3xl md:mb-2">
+                <li key={index} className="text-lg md:text-xl md:mb-2">
                   {item}
                 </li>
               ))}

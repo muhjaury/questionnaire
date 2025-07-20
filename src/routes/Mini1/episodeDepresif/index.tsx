@@ -79,7 +79,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
     return (
       <>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Episode Depresif
           </p>
           <div className="flex flex-col gap-4">
@@ -132,7 +132,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
     return (
       <>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Episode Depresif
           </p>
           <div className="flex flex-col gap-4">
@@ -230,7 +230,7 @@ function EpisodeDepresif({ setIsDone = () => {} }: EpisodeDepresif_Type) {
     return (
       <>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Episode Depresif
           </p>
           <div className="flex flex-col gap-4">

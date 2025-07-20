@@ -149,7 +149,7 @@ function GangguanPanik({ setIsDone = () => {} }: GangguanPanik_Type) {
     return (
       <>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Gangguan Panik
           </p>
           <div className="flex flex-col gap-4">
@@ -181,7 +181,7 @@ function GangguanPanik({ setIsDone = () => {} }: GangguanPanik_Type) {
     return (
       <>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Gangguan Panik
           </p>
           <div className="flex flex-col gap-4">
@@ -211,7 +211,7 @@ function GangguanPanik({ setIsDone = () => {} }: GangguanPanik_Type) {
     return (
       <>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Gangguan Panik
           </p>
           <div className="flex flex-col gap-4">
@@ -376,7 +376,7 @@ function GangguanPanik({ setIsDone = () => {} }: GangguanPanik_Type) {
     return (
       <>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Gangguan Panik
           </p>
           <p className="md:text-xl">

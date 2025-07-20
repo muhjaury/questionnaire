@@ -90,7 +90,7 @@ function Mini4() {
     return (
       <CoreLayout>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Gangguan Stress Pasca Trauma
           </p>
           <div className="flex flex-col gap-4">
@@ -136,7 +136,7 @@ function Mini4() {
     return (
       <CoreLayout>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Gangguan Stress Pasca Trauma
           </p>
           <p className="md:text-xl">Sejak peristiwa ini :</p>
@@ -179,7 +179,7 @@ function Mini4() {
     return (
       <CoreLayout>
         <Card>
-          <p className="text-center font-bold text-3xl md:text-5xl mb-8">
+          <p className="text-center font-bold text-2xl md:text-4xl mb-8">
             Gangguan Stress Pasca Trauma
           </p>
           <p className="md:text-xl">
