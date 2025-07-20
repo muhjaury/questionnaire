@@ -9,7 +9,6 @@ export const Wrapper = styled.div`
   min-height: 48px;
   border: 1px solid ${color.a1};
   border-radius: 24px;
-  cursor: pointer;
   background: #ffffff;
 
   @media all and (min-width: 1024px) {
@@ -21,6 +20,7 @@ export const Title = styled.div`
   color: ${color.a2};
   font-size: 20px;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 export const Description = styled.div`
@@ -29,6 +29,7 @@ export const Description = styled.div`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 `;
 
 export const Close = styled.img<Interface_Img>`
@@ -37,4 +38,5 @@ export const Close = styled.img<Interface_Img>`
   right: -16px;
   width: 32px;
   height: 32px;
+  cursor: pointer;
 `;
