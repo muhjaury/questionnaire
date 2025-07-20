@@ -13,15 +13,15 @@ function Mini3() {
   const [isN1N7NextClicked, setIsN1N7NextClicked] = useState(false);
   const [isN1N7Done, setIsN1N7Done] = useState(false);
   const [isN8N9NextClicked, setIsN8N9NextClicked] = useState(false);
-  const [n11, setN11] = useState("");
-  const [n21, setN21] = useState("");
-  const [n31, setN31] = useState("");
-  const [n41, setN41] = useState("");
-  const [n51, setN51] = useState("");
-  const [n61, setN61] = useState("");
-  const [n71, setN71] = useState("");
-  const [n81, setN81] = useState("");
-  const [n91, setN91] = useState("");
+  const [n11, setN11] = useState("Iya");
+  const [n21, setN21] = useState("Tidak");
+  const [n31, setN31] = useState("Tidak");
+  const [n41, setN41] = useState("Tidak");
+  const [n51, setN51] = useState("Tidak");
+  const [n61, setN61] = useState("Tidak");
+  const [n71, setN71] = useState("Tidak");
+  const [n81, setN81] = useState("Tidak");
+  const [n91, setN91] = useState("Iya");
 
   const dataFromRedux = useSelector((state: any) => state.data);
   const dispatch = useDispatch();
@@ -33,9 +33,10 @@ function Mini3() {
   }, []);
 
   const handleSubmit = () => {
-    if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
-      router.replace(urls.MINI_4);
-    }
+    router.replace(urls.MINI_RESULT);
+    // if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
+    //   router.replace(urls.MINI_4);
+    // }
   };
 
   const handleLanjutN1N7Click = () => {

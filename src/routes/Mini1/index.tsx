@@ -28,15 +28,18 @@ function Mini1() {
   const router = useRouter();
 
   useEffect(() => {
-    if (dataFromRedux?.srq?.length > 0 && isHDone) {
-      if (dataFromRedux.srq.includes(PENYAKIT.NARKOBA)) {
-        router.replace(urls.MINI_2);
-      } else if (dataFromRedux.srq.includes(PENYAKIT.PSIKOSIS)) {
-        router.replace(urls.MINI_3);
-      } else if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
-        router.replace(urls.MINI_4);
-      }
+    if (isHDone) {
+      router.replace(urls.MINI_RESULT);
     }
+    // if (dataFromRedux?.srq?.length > 0 && isHDone) {
+    //   if (dataFromRedux.srq.includes(PENYAKIT.NARKOBA)) {
+    //     router.replace(urls.MINI_2);
+    //   } else if (dataFromRedux.srq.includes(PENYAKIT.PSIKOSIS)) {
+    //     router.replace(urls.MINI_3);
+    //   } else if (dataFromRedux.srq.includes(PENYAKIT.PTSD)) {
+    //     router.replace(urls.MINI_4);
+    //   }
+    // }
   }, [dataFromRedux?.srq, isHDone]);
 
   return (
