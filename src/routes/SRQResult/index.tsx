@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card } from "@/components";
+import { Ads, Button, Card } from "@/components";
 import { PENYAKIT } from "@/constant/variable";
 import CoreLayout from "@/layout/CoreLayout";
 import { useRouter } from "next/navigation";
@@ -13,6 +13,7 @@ import { urls } from "@/constant/path";
 
 function SRQResult() {
   const [srq, setSrq] = useState<string[]>([]);
+  const [displayAds1, setDisplayAds1] = useState(true);
 
   const dataFromRedux = useSelector((state: any) => state.data);
 
@@ -55,6 +56,14 @@ function SRQResult() {
                 </li>
               ))}
             </ul>
+          )}
+          {srq?.length > 0 && displayAds1 && (
+            <Ads
+              title="Cara Efektif Menjaga Kesehatan Mental"
+              description="Berikut adalah beberapa tips yang bisa dilakukan dalam memperbaiki kesehatan jiwa Anda:"
+              onClose={() => setDisplayAds1(false)}
+              onOpen={() => window.open(urls.TIPS)}
+            />
           )}
         </div>
       </Card>

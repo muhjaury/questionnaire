@@ -1,6 +1,7 @@
 "use client";
 
-import { Card } from "@/components";
+import { Ads, Card } from "@/components";
+import { urls } from "@/constant/path";
 import CoreLayout from "@/layout/CoreLayout";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -10,6 +11,7 @@ import { Img } from "./MiniResult.style";
 
 function MiniResult() {
   const [miniList, setMiniList] = useState<string[]>([]);
+  const [displayAds1, setDisplayAds1] = useState(true);
 
   const dataFromRedux = useSelector((state: any) => state.data);
 
@@ -66,6 +68,14 @@ function MiniResult() {
                 </li>
               ))}
             </ul>
+          )}
+          {miniList?.length > 0 && displayAds1 && (
+            <Ads
+              title="Cara Efektif Menjaga Kesehatan Mental"
+              description="Berikut adalah beberapa tips yang bisa dilakukan dalam memperbaiki kesehatan jiwa Anda:"
+              onClose={() => setDisplayAds1(false)}
+              onOpen={() => window.open(urls.TIPS)}
+            />
           )}
         </div>
       </Card>
